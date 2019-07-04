@@ -1,10 +1,16 @@
 # TODO: should use a metaclass for similar custom exceptions
 class PathTypeError(TypeError):
     """Raised when a string isn't passed for an album directory path."""
-    default_message = 'album path should be string, bytes, os.PathLike or integer'
+    default_message = 'Album path should be string, bytes, os.PathLike or integer'
 
     def __init__(self):
         super().__init__(PathTypeError.default_message)
+
+class AlbumDataError():
+    default_message = 'An unequal amount of album paths and album urls were supplied'
+
+    def __init__(self):
+        pass
 
 
 class AlbumNotFoundError(FileNotFoundError):
