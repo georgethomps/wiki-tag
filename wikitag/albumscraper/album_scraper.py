@@ -46,10 +46,17 @@ class AlbumScraper:
         process.crawl(self._Spider, self._memory_link)
         process.start()
         self._flush_memory_link()  # store the album data in the Scraper's album attribute and flush the link.
+        del process
 
 
+# TODO: need to make this be able to scrape multiple albums!!!!!!!!!!!
 if __name__ == '__main__':
     album_url = 'https://en.wikipedia.org/wiki/Rodeo_(Travis_Scott_album)'
     hm = AlbumScraper(url=album_url)
+    hm.crawl()
+    print(hm.album)
+
+    hm.url = 'https://en.wikipedia.org/wiki/Rap_or_Go_to_the_League'
+    print(hm.url)
     hm.crawl()
     print(hm.album)
