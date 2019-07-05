@@ -1,6 +1,4 @@
 """Console application to quickly tag albums"""
-from twisted.internet.error import ReactorNotRestartable
-
 from albumtagger.album_tagger import AlbumTagger
 
 
