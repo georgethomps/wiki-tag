@@ -1,6 +1,5 @@
 """Console application to quickly tag albums"""
 from albumtagger.album_tagger import AlbumTagger
-'a'
 
 
 def main():
