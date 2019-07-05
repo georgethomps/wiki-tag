@@ -122,6 +122,7 @@ class AlbumTagger(TaggerMixin):
                 untagged.append(file + ' (Is a Directory!)')  # TODO: remove this text when reasons are implemented
                 continue
 
+        # TODO: display album title
         if print_untagged:
             print('WARNING: The following files/folders could not be tagged:\n')
             print(*untagged, sep='\n')
