@@ -6,11 +6,12 @@ class PathTypeError(TypeError):
     def __init__(self):
         super().__init__(PathTypeError.default_message)
 
-class AlbumDataError():
+
+class AlbumDataError(ValueError):
     default_message = 'An unequal amount of album paths and album urls were supplied'
 
     def __init__(self):
-        pass
+        super().__init__(AlbumDataError.default_message)
 
 
 class AlbumNotFoundError(FileNotFoundError):
