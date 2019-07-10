@@ -6,12 +6,25 @@ Wiki-tag is a webscraping framework built off of Scrapy that is designed to scra
 The heart of the framework resides in the AlbumScraper class, which functions similarly to a Scrapy Spider.
 Additionally, users can use the AlbumTagger class to scrape music data and tag music files with such data.
 
+**Documents Guide**
+
+For more detailed information beyond the scope of the README, please refer to the following documents for the 
+following information:
+
+structure-overview.md: Detailed explanation of each module's role in the context of the entire project.
+
 **Using the AlbumScraper**
 
 Using the AlbumScraper is incredibly simple and functions similarly to a Scrapy Spider. You can manage the
 albums you want to scrape by adding or removing album URL's through the "urls" attribute (it behaves like a list).
 Once all of your url's are confirmed, you can scrape the music data with the "crawl" method (this can only be done
 once).
+
+**Using the AlbumTagger**
+
+The AlbumTagger is a useful tool for users who want to tag music files with scraped music data. To use the tagger,
+you can add an album with the .add_album(*folder path of the music files, *album's Wikipedia link). Once all 
+of your albums are added, you can use the "scrape_albums" method to extract all of the Wikipedia data for each album. Afterwards, you can tag all of the albums' files with the "tag_albums" method.
 
 Once your music data is scraped, you can access the data through the "albums" attribute. Each album is stored in
 a TagMap, which is a dictionary of the metadata that can be used to tag music files (read the TagMap section for
