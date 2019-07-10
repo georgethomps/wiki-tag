@@ -17,11 +17,21 @@ WIKITAG: `source code`
 &nbsp; ALBUMSCRAPER: `Source code for the AlbumScraper (used to scrape music data)`
 &nbsp;
 
+&nbsp;&nbsp; DATAMANAGEMENT: `Code used extract information from the scraped HTML data`
+&nbsp;&nbsp; SCRAPYMODULES: `Scrapy code used to facilitate the scraping process`
+&nbsp;&nbsp; __init__.py
+&nbsp;&nbsp; album_scraper.py: `Code for the AlbumScraper class`
+
 &nbsp; ALBUMTAGGER: `Source code for the AlbumTagger (used to scrape music data and tag files)`
+&nbsp;
+
 &nbsp; __init__.py
+&nbsp;
+
 &nbsp; wikitag_console.py: `Console application that I designed for friends to use`
 
 
+&nbsp;&nbsp;
 
 
 
