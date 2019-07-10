@@ -6,6 +6,7 @@ Wiki-tag is a webscraping framework built off of Scrapy that is designed to scra
 The heart of the framework resides in the AlbumScraper class, which functions similarly to a Scrapy Spider.
 Additionally, users can use the AlbumTagger class to scrape music data and tag music files with such data.
 
+
 **Documents Guide**
 
 For more detailed information beyond the scope of the README, please refer to the following documents for the 
@@ -13,12 +14,14 @@ following information:
 
 structure-overview.md: `Detailed explanation of each module's role in the context of the entire project.`
 
+
 **Using the AlbumScraper**
 
 Using the AlbumScraper is incredibly simple and functions similarly to a Scrapy Spider. You can manage the
 albums you want to scrape by adding or removing album URL's through the "urls" attribute (it behaves like a list).
 Once all of your url's are confirmed, you can scrape the music data with the "crawl" method (this can only be done
 once).
+
 
 **Using the AlbumTagger**
 
@@ -29,6 +32,7 @@ of your albums are added, you can use the "scrape_albums" method to extract all 
 Once your music data is scraped, you can access the data through the "albums" attribute. Each album is stored in
 a TagMap, which is a dictionary of the metadata that can be used to tag music files (read the TagMap section for
 more).
+
 
 **List of TagMap Keys for Extracting Album-Level Data**
 A TagMap (pending to be formally implemented) is the data structure used to store scraped album data. Here is a
@@ -41,6 +45,7 @@ list of the following keys that can be used to retrieve specific album data:
 5. genres: A tuple of genres found on the Wikipedia page (the first is used by default)
 6. tracks: A list of named tuples which contain track-level information (read Track section for more)
 
+
 **List of Track Keys for Extracking Track-Level Data**
 A Track is a named tuple that stores track-level music data. Tracks contain the following keys:
 
@@ -52,6 +57,7 @@ A Track is a named tuple that stores track-level music data. Tracks contain the 
 
 TODO: Add a section for the Album Tagger
 
+
 **Important Project Guidelines**
 
 The following is a list of a guidelines that should be read before working with wiki-tag:
@@ -60,6 +66,7 @@ The following is a list of a guidelines that should be read before working with 
 2. Only one instance of an AlbumScraper should be implemented in one's code
 3. The filenames for an album's tracks must be alphabetically sorted by track number (most music files are)
 4. Some audio formats may not work; these will be implemented in future updates through the tag_map module
+
 
 **Framework Weaknesses**
 
@@ -74,6 +81,7 @@ Aside from these scraping weaknesses, there are a few other general framework is
 
 1. The framework was designed to work with FLAC; other audio formats may not work (URGENT)
 
+
 **Moving Forward**
 
 As of now, I've nearly reached a year ever since I started learning Python. I've never been more proud of
@@ -81,63 +89,3 @@ a project than wiki-tag and I intend to stick with it to improve the functionali
 the code. If anyone would like to contribute or offer advice, feel free to email me at ghthompson19@gmail.com
 
 I hope you all enjoy wiki-tag!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
