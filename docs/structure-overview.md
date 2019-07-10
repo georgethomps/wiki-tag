@@ -15,6 +15,8 @@ Standard Case: `Python Module`
 WIKITAG: `source code`
 
 &nbsp; ALBUMSCRAPER: `Source code for the AlbumScraper (used to scrape music data)`
+&nbsp;
+
 &nbsp; ALBUMTAGGER: `Source code for the AlbumTagger (used to scrape music data and tag files)`
 &nbsp; __init__.py
 &nbsp; wikitag_console.py: `Console application that I designed for friends to use`
