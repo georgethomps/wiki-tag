@@ -67,6 +67,7 @@ The following is a list of a guidelines that should be read before working with 
 3. The filenames for an album's tracks must be alphabetically sorted by track number (most music files are)
 4. Some audio formats may not work; these will be implemented in future updates through the tag_map module
 
+&nbsp
 
 **Framework Weaknesses**
 
