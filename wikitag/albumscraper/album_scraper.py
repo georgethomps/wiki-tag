@@ -4,13 +4,11 @@ from scrapy.crawler import CrawlerProcess
 
 
 class AlbumScraper:
-    """The purpose of this class it provide a an easy-to-use API for people who have no knowledge of Scrapy. It also
+    """The purpose of this class is to provide an easy-to-use API for people who have no knowledge of Scrapy. It also
     makes it possible to internally collect data extracted from Scrapy as opposed to having to save the data to
-    physical files!
+    physical files!"""
 
-    WARNING: It's important to know that run() can only be used once due to the nature of the Scrapy framework!
-    Furthermore, only one AlbumScraper can be implemented in one's code."""
-
+    # TODO: create a tag_map data structure!!!
     # allows users to decided which urls to request
     def __init__(self, urls):
         self._albums = []  # Takes advantage of call by sharing to retrieve parsed data.

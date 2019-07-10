@@ -8,7 +8,7 @@ def main():
 
     # TODO: warn user that files must be in order and that the tags will be changed in-place
     print('Welcome to the WikiTag console application!\n')
-    print("WARNING: Each albums' music files must be alphabetically sorted in the order of the track list!\n")
+    print("IMPORTANT: Each albums' music files must be alphabetically sorted in the order of the track list!\n")
 
     while True:
         directory = input('Drag your album folder here and press enter: ')

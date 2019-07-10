@@ -30,7 +30,7 @@ def _extract_track_info(response, item):
 
     # TrackCleaner to facilitate data cleansing
     cleaner = TrackCleaner(field_string=col_headers)
-    item['tracks'] = list(cleaner.run_dispatch(track_rows))
+    item['tracks'] = list(cleaner.run_dispatch(track_rows))  # TODO: find a better data structure?
 
 
 # Extract all album and item-related information

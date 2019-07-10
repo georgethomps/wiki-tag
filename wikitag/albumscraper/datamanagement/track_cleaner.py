@@ -14,7 +14,7 @@ class TrackCleaner:
     def __init__(self, field_string):
         field_string = TrackCleaner._field_name_regex.sub('', field_string)
         self._fields = field_string.split()  # store string of named tuple fields as a list
-        self.Track = namedtuple('Track', field_string)
+        self.Track = namedtuple('Track', field_string)  # TODO: this should be more consistent
 
         # TODO: find a way to make this a class attribute (better for memory)
         self._dispatch_map = {'No': self.clean_no,

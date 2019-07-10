@@ -8,12 +8,6 @@ from albumtagger.tagger_helpers.tagger_mixin import *
 
 # TODO: USE UNICODE OBJECTS!!!!!!!!!!!!!!!!!!!!!
 class AlbumTagger(TaggerMixin):
-    """WARNING: For now this is solely designed for FLAC files, but more audio formats will be implemented through
-    the tag_map module in the tagger_helpers package.
-
-    WARNING: It's also important to note that an AlbumTagger can only scrape album data once!
-
-    WARNING: Files in the directory must be sorted in the correct track order!"""
 
     album = namedtuple('Album', ['path', 'url', 'data_map'])  # helps organize the albums' data
 
@@ -124,7 +118,7 @@ class AlbumTagger(TaggerMixin):
 
         # TODO: display album title
         if print_untagged:
-            print('WARNING: The following files/folders could not be tagged:\n')
+            print('IMPORTANT: The following files/folders could not be tagged:\n')
             print(*untagged, sep='\n')
             print()
 
