@@ -14,19 +14,19 @@ Standard Case: `Python Module`
 
 WIKITAG: `source code`
 
-&nbsp; ALBUMSCRAPER: `Source code for the AlbumScraper (used to scrape music data)`
+&nbsp;&nbsp; ALBUMSCRAPER: `Source code for the AlbumScraper (used to scrape music data)`
 &nbsp;
 
-&nbsp;&nbsp; DATAMANAGEMENT: `Code used extract information from the scraped HTML data`
+&nbsp;&nbsp;&nbsp; DATAMANAGEMENT: `Code used extract information from the scraped HTML data`
 &nbsp;
 
-&nbsp;&nbsp; SCRAPYMODULES: `Scrapy code used to facilitate the scraping process`
+&nbsp;&nbsp;&nbsp; SCRAPYMODULES: `Scrapy code used to facilitate the scraping process`
 &nbsp;
 
-&nbsp;&nbsp; __init__.py
+&nbsp;&nbsp;&nbsp; __init__.py
 &nbsp;
 
-&nbsp;&nbsp; album_scraper.py: `Code for the AlbumScraper class`
+&nbsp;&nbsp;&nbsp; album_scraper.py: `Code for the AlbumScraper class`
 &nbsp;
 
 &nbsp; ALBUMTAGGER: `Source code for the AlbumTagger (used to scrape music data and tag files)`
