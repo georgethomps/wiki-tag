@@ -11,7 +11,7 @@ Additionally, users can use the AlbumTagger class to scrape music data and tag m
 For more detailed information beyond the scope of the README, please refer to the following documents for the 
 following information:
 
-structure-overview.md: Detailed explanation of each module's role in the context of the entire project.
+structure-overview.md: `Detailed explanation of each module's role in the context of the entire project.`
 
 **Using the AlbumScraper**
 
