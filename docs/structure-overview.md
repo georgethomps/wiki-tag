@@ -22,8 +22,10 @@ WIKITAG: `source code`
 
 &nbsp;&nbsp;&nbsp;&nbsp; __init__.py
 &nbsp;
+
 &nbsp;&nbsp;&nbsp;&nbsp; data_extractors.py: `Higher level code of the xpath's used to parse HTML data`
 &nbsp;
+
 &nbsp;&nbsp;&nbsp;&nbsp; track_cleaner.py: `TrackCleaner class to handle minor details with HTML track data`
 &nbsp;
 
