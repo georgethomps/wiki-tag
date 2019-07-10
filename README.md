@@ -6,6 +6,7 @@ Wiki-tag is a webscraping framework built off of Scrapy that is designed to scra
 The heart of the framework resides in the AlbumScraper class, which functions similarly to a Scrapy Spider.
 Additionally, users can use the AlbumTagger class to scrape music data and tag music files with such data.
 
+&nbsp;
 
 **Documents Guide**
 
@@ -14,6 +15,7 @@ following information:
 
 structure-overview.md: `Detailed explanation of each module's role in the context of the entire project.`
 
+&nbsp;
 
 **Using the AlbumScraper**
 
@@ -22,6 +24,7 @@ albums you want to scrape by adding or removing album URL's through the "urls" a
 Once all of your url's are confirmed, you can scrape the music data with the "crawl" method (this can only be done
 once).
 
+&nbsp;
 
 **Using the AlbumTagger**
 
@@ -33,6 +36,7 @@ Once your music data is scraped, you can access the data through the "albums" at
 a TagMap, which is a dictionary of the metadata that can be used to tag music files (read the TagMap section for
 more).
 
+&nbsp;
 
 **List of TagMap Keys for Extracting Album-Level Data**
 A TagMap (pending to be formally implemented) is the data structure used to store scraped album data. Here is a
@@ -45,6 +49,7 @@ list of the following keys that can be used to retrieve specific album data:
 5. genres: A tuple of genres found on the Wikipedia page (the first is used by default)
 6. tracks: A list of named tuples which contain track-level information (read Track section for more)
 
+&nbsp;
 
 **List of Track Keys for Extracking Track-Level Data**
 A Track is a named tuple that stores track-level music data. Tracks contain the following keys:
@@ -57,6 +62,7 @@ A Track is a named tuple that stores track-level music data. Tracks contain the 
 
 TODO: Add a section for the Album Tagger
 
+&nbsp;
 
 **Important Project Guidelines**
 
@@ -82,6 +88,7 @@ Aside from these scraping weaknesses, there are a few other general framework is
 
 1. The framework was designed to work with FLAC; other audio formats may not work (URGENT)
 
+&nbsp;
 
 **Moving Forward**
 
